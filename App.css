@@ -1,0 +1,113 @@
+/* General Styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+/* Search Input and Button Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Repository List */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+li p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Loading State */
+.loading {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
